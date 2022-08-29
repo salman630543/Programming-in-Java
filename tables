@@ -1,0 +1,15 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        int i,m=10,x;
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter the required table:");
+       int n = input.nextInt();
+       for(i=1;i<=m;i++)
+       {
+         x=n*i;
+         System.out.println(n+"*"+i+"="+x);    
+       }
+       
+}
+}
