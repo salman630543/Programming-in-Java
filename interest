@@ -1,0 +1,33 @@
+import java.util.*;   
+class Main
+{  
+   public static void main(String args[])  
+   {  
+     int x,y;
+      System.out.println("Enter the age:");
+      Scanner input = new Scanner(System.in);
+      int age = input.nextInt();
+      if(age<55)
+      {
+          System.out.println("Enter the amount:");
+          int amount =input.nextInt();
+          System.out.println("Enter the period:");
+          int period = input.nextInt();
+          x=(amount*10*period)/100;
+          y=amount+x;
+          System.out.println("interest"+x);
+          System.out.println("Total Amount With Interest:"+y);
+      }
+      else
+      {
+          System.out.println("Enter the amount:");
+          int amount =input.nextInt();
+          System.out.println("Enter the period:");
+          int period = input.nextInt();
+          x=(amount*12*period)/100;
+          y=amount+x;
+          System.out.println("interest"+x);
+          System.out.println("Total Amount With Interest:"+y);
+      }
+   }
+}
