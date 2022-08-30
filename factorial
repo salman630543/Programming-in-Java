@@ -1,0 +1,28 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        int count=1;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number:");
+        if(input.hasNextInt())
+        {
+            int x =input.nextInt();
+            if(x>0)
+            {
+            for (int i=1;i<=x;i++)
+            {
+                count=count*i;
+            }
+            System.out.println("Factorial of the entered number:"+count);
+        }
+        else
+        {
+            System.out.println("Invalid");
+        }
+        }
+        else
+        {
+            System.out.println("Invalid");
+        }
+}
+}
