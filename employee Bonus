@@ -1,0 +1,47 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        int x,y;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the salary:");
+        int salary = input.nextInt();
+        System.out.println("Enter the grade of an employee:");
+         int grade =input.nextInt();
+        input.close();
+        if(salary>10000)
+        {
+        if(grade==1)
+        {
+            x=(salary*5/100);
+            y=salary+x;
+            System.out.println("salary:\n"+salary);
+            System.out.println("Bonus:\n"+x);
+            System.out.println("total:\n"+y);
+        }
+        else if(grade==2)
+        {
+            x=(salary*10/100);
+            y=salary+x;
+            System.out.println("salary:"+salary);
+            System.out.println("Bonus:"+x);
+            System.out.println("total:"+y);
+        }
+    }
+    else if(grade==1)
+    {
+            x=(salary*7/100);
+            y=salary+x;
+            System.out.println("salary:"+salary);
+            System.out.println("Bonus:"+x);
+            System.out.println("total:"+y);
+    }
+    else if(grade==2)
+    {
+            x=(salary*12/100);
+            y=salary+x;
+            System.out.println("salary:"+salary);
+            System.out.println("Bonus:"+x);
+            System.out.println("total:"+y);
+    }
+}
+}
