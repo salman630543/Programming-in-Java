@@ -1,0 +1,21 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        int n,m,z;
+        Scanner input = new Scanner(System.in);
+        System.out.println("ENTER THE TOTAL USERS:-");
+        int x = input.nextInt();
+        System.out.println("ENTER THE STAFF USERS:-");
+        int y = input.nextInt();
+        if(x>0 && x>y && y>0)
+        {
+            n=x-y;
+            m=y/3;
+            z=n-m;
+            System.out.println("STUDENT USERS:-"+z);
+        }
+        else{
+            System.out.println("INVALID");
+        }
+    }
+}
