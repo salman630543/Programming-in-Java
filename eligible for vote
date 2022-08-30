@@ -1,0 +1,33 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        int y;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the age:");
+        if(input.hasNextInt())
+        {
+        int age = input.nextInt();
+        if(age>0)
+        {
+        if(age>=18)
+        {
+            System.out.println("Eligible for vote");
+        }
+        else
+        {
+            y=18-age;
+            System.out.println("Not eligible for vote");
+            System.out.println("Age required to vote:"+y);
+        }
+        }
+        else
+        {
+            System.out.println("Invalid");
+        }
+        }
+        else
+        {
+            System.out.println("Invalid");
+        }
+}
+}
